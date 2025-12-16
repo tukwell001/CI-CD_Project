@@ -32,7 +32,7 @@ jobs:
         cd chapter4
         python -m unittest discover
 
-        - name: notify us of success
-        run: echo "Tests passed on python ${{ matrix.python-version }}
+     - name: notify us of success
+       run: echo "Tests passed on python ${{ matrix.python-version }}
      if: success()
 
