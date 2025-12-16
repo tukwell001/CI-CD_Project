@@ -18,7 +18,7 @@ jobs:
      - name: setup python
        uses: actions/setup-python@v2
        with:
-          python-version: ${{ matrix.python-version }}
+          python-version: "${{ matrix.python-version }}"
 
      - name: Install dependencies
        run: |
@@ -33,6 +33,6 @@ jobs:
         python -m unittest discover
 
      - name: notify us of success
-       run: echo "Tests passed on python ${{ matrix.python-version }}
+       run: echo "Tests passed on python ${{ matrix.python-version }}"
      if: success()
 
